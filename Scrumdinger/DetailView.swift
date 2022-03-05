@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     let scrum:DailyScrum
-    @State private var isPresentingEditView = false
+    @State private var isPresentingEditView = false  //When you declare a property as a @State, you create a source of truth within your view.
     
     var body: some View {
         List{
@@ -54,7 +54,7 @@ struct DetailView: View {
             .sheet(isPresented: $isPresentingEditView, onDismiss:{
                 
             }){
-                //Hate this here , would have put it in Detail view and would have used a closure to return a callback,Horrible
+                //Hate this here , would have put it in Detail Edit view and would have used a closure to return a callback,Horrible
                 
                 NavigationView{
                     DetailEditView()

@@ -11,6 +11,7 @@ import SwiftUI
 struct ScrumdingerApp: App {
     var body: some Scene {
         WindowGroup {
+            //Still feel NavigationView should be used inside ScrumView
             NavigationView{
                 ScrumView(scrums: DailyScrum.sampleData)
             }

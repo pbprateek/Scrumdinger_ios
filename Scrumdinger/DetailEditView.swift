@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailEditView: View {
     
-    @State private var data = DailyScrum.Data()
+    @State private var data = DailyScrum.Data() //When you declare a property as a @State, you create a source of truth within your view.
     @State private var newAttendeeName = ""
     
     var body: some View {
