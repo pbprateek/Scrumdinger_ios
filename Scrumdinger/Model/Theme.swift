@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-enum Theme:String{
-    
+enum Theme:String,CaseIterable,Identifiable{
+
     case bubblegum
     case buttercup
     case indigo
@@ -31,6 +31,11 @@ enum Theme:String{
     var name: String {
            rawValue.capitalized
        }
+    
+    //From identifable protocol
+    var id: String{
+        name
+    }
     
     var accentColor: Color {
         switch self {

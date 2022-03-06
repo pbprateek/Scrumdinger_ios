@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailEditView: View {
     
-    @State private var data = DailyScrum.Data() //When you declare a property as a @State, you create a source of truth within your view.
+    @Binding var data: DailyScrum.Data
     @State private var newAttendeeName = ""
     
     var body: some View {
@@ -25,6 +25,7 @@ struct DetailEditView: View {
                     Spacer()
                     Text("\(Int(data.lengthInMinutes)) minutes)") .accessibilityHidden(true)
                 }
+                TheamePicker(selection: $data.theme)
             }
             
             Section(header: Text("Attendees")){
@@ -57,6 +58,9 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView()
+        Group {
+            DetailEditView(data:.constant(DailyScrum.sampleData[0].data))
+                .previewInterfaceOrientation(.portrait)
+        }
     }
 }

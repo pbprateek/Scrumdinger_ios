@@ -18,6 +18,7 @@
 		3F01B3CD27C20C2300D1C6FD /* ScrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F01B3CC27C20C2300D1C6FD /* ScrumView.swift */; };
 		3F01B3CF27C2428800D1C6FD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F01B3CE27C2428800D1C6FD /* DetailView.swift */; };
 		3F01B3D127C27EA700D1C6FD /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F01B3D027C27EA700D1C6FD /* DetailEditView.swift */; };
+		3F6FB45B27D3B24A00C895C4 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6FB45A27D3B24A00C895C4 /* ThemePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3F01B3CC27C20C2300D1C6FD /* ScrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumView.swift; sourceTree = "<group>"; };
 		3F01B3CE27C2428800D1C6FD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3F01B3D027C27EA700D1C6FD /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
+		3F6FB45A27D3B24A00C895C4 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				3F01B3CC27C20C2300D1C6FD /* ScrumView.swift */,
 				3F01B3CE27C2428800D1C6FD /* DetailView.swift */,
 				3F01B3D027C27EA700D1C6FD /* DetailEditView.swift */,
+				3F6FB45A27D3B24A00C895C4 /* ThemePicker.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				3F01B3C327C1E3C300D1C6FD /* Theme.swift in Sources */,
 				3F01B3B627C18D9400D1C6FD /* MeetingView.swift in Sources */,
 				3F01B3B427C18D9400D1C6FD /* ScrumdingerApp.swift in Sources */,
+				3F6FB45B27D3B24A00C895C4 /* ThemePicker.swift in Sources */,
 				3F01B3C927C1E99F00D1C6FD /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,13 +11,13 @@ import SwiftUI
 //To be used inside NavigationView or else few parameters won't work
 struct ScrumView: View {
     
-    let scrums:[DailyScrum]
+    @Binding var scrums:[DailyScrum]
     
     var body: some View {
         List{
-            ForEach(scrums){ scrum in
-            
-                NavigationLink(destination:DetailView(scrum: scrum)){
+            //This is called some array binding where we run loop on binding array and get binding each time in closure
+            ForEach($scrums){ $scrum in
+                NavigationLink(destination:DetailView(scrum: $scrum)){
                     CardView(scrum: scrum)
                 }.listRowBackground(scrum.theme.mainColor)
             }
@@ -39,7 +39,7 @@ struct ScrumView: View {
 struct ScrumView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            ScrumView(scrums: DailyScrum.sampleData)
+            ScrumView(scrums: .constant(DailyScrum.sampleData))
         }
     }
 }

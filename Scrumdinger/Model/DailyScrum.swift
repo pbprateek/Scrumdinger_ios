@@ -42,6 +42,7 @@ extension DailyScrum {
     }
     
     
+    //We just created a Copy kind of thing just for UI purpose and to pass it around
     struct Data {
            var title: String = ""
            var attendees: [Attendee] = []
@@ -52,6 +53,13 @@ extension DailyScrum {
     var data:Data {
         //Here we returned the original value, more like a copy
         Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+    }
+    
+    mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        theme = data.theme
     }
 }
 
